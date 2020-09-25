@@ -1,45 +1,48 @@
-def add(x, y):
-   return x + y
-def subtract(x, y):
-   return x - y
-def multiply(x, y):
-   return x * y
-def divide(x, y):
-   return x / y
-def modulus(x,y):
-   return x % y
-def exponent(x,y):
-   return x ** y
-print("Paul Calc")
-print("Select operation.")
-print("1.Add")
-print("2.Subtract")
-print("3.Multiply")
-print("4.Divide")
-print("5.Remainder")
-print("6.Exponent")
-choice = input("Enter choice(1/2/3/4): ")
+def add(x,y):
+    return x + y
+def substract(x,y):
+    return x - y
+def multiply(x,y):
+    return x * y
+def divide(x,y):
+    return x / y
+def exponential(x,y):
+    return x ** y
+def Modulus(x,y):
+    return x % y
+def floor_division(x,y):
+    return x // y
 
-num1 = float(input("Enter first number: "))
-num2 = float(input("Enter second number: "))
+print('1.Add ')
+print('2.Substract ')
+print('3.Multiply ')
+print('4.Divide ')
+print('5.Exponential ')
+print('6.Modulus ')
+print('7.Floor Divide ')
 
-if choice == '1':
-   print(num1,"+",num2,"=", add(num1,num2))
+choice = float(input("Choose an option(1/2/3/4/5/6/7): "))
 
-elif choice == '2':
-   print(num1,"-",num2,"=", subtract(num1,num2))
+print('I')
+print('I')
+print('I')
 
-elif choice == '3':
-   print(num1,"*",num2,"=", multiply(num1,num2))
+num_1 = float(input('Give the first number: '))
+num_2 = float(input('Give the second number: '))
 
-elif choice == '4':
-   print(num1,"/",num2,"=", divide(num1,num2))
-
-elif choice == '5':
-   print(num1,"%",num2, "=", modulus(num1,num2))
-
-elif choice == '6':
-   print(num1,"**",num2,"=", exponent(num1,num2))
-
+if choice == 1:
+    print(num_1, "+", num_2, "=",add(num_1,num_2) )
+elif choice == 2:
+    print(num_1, "-", num_2, "=", substract(num_1, num_2))
+elif choice == 3:
+    print(num_1, "*", num_2, "=", multiply(num_1, num_2))
+elif choice == 4:
+    print(num_1, "/", num_2, "=", divide(num_1, num_2))
+elif choice == 5:
+    print(num_1, "**", num_2, "=", exponential(num_1, num_2))
+elif choice == 6:
+    print(num_1, "%", num_2, "=", Modulus(num_1, num_2))
+elif choice == 7:
+    print(num_1, "//", num_2, "=", floor_division(num_1, num_2))
 else:
-   print("Invalid input")
+    print('Syntax Error ')
