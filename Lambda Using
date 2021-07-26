@@ -1,0 +1,34 @@
+def ty():
+    lists = []
+    list_pos = int(input("Give the total num: "))
+
+    for pos in range(list_pos):
+        lists.append(int(input(f'Give the {pos + 1} `st" number: ')))
+
+    lists.sort()
+    print("Orginal List")
+    print(lists)
+
+    print("Even Numbers")
+    even_lst = list(filter(lambda x: x % 2 == 0, lists))
+    even_lst.sort()
+    print(even_lst)
+
+    print("Odd Numbers")
+    odd_lst = list(filter(lambda x: x % 2 != 0, lists))
+    odd_lst.sort()
+    print(odd_lst)
+
+    print("Negative Numbers")
+    n_lst = list(filter(lambda x: x < 0, lists))
+    n_lst.sort()
+    print(n_lst)
+
+    print("Positive Numbers")
+    posi_lst = list(filter(lambda x: x > 0, lists))
+    posi_lst.sort()
+    print(posi_lst)
+
+
+while True:
+    ty()
